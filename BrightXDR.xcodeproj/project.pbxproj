@@ -11,7 +11,25 @@
 		1D2D10E629D7778100D7A887 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2D10E529D7778100D7A887 /* AppDelegate.swift */; };
 		1DCF1F5329D2FABB005D14C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DCF1F5229D2FABB005D14C3 /* Assets.xcassets */; };
 		1DCF1F6029D2FBD9005D14C3 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCF1F5F29D2FBD9005D14C3 /* MetalView.swift */; };
+		333FDD802A34EB54000FE172 /* Oval.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 333FDD7F2A34EB54000FE172 /* Oval.pdf */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		333FDD962A34EDA7000FE172 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DCF1F4329D2FABA005D14C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 333FDD842A34EDA6000FE172;
+			remoteInfo = HelperApp;
+		};
+		333FDDA02A34EDA7000FE172 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DCF1F4329D2FABA005D14C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 333FDD842A34EDA6000FE172;
+			remoteInfo = HelperApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1D2D10E329D7777200D7A887 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -21,10 +39,35 @@
 		1DCF1F5229D2FABB005D14C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DCF1F5729D2FABB005D14C3 /* BrightXDR.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BrightXDR.entitlements; sourceTree = "<group>"; };
 		1DCF1F5F29D2FBD9005D14C3 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
+		333FDD7F2A34EB54000FE172 /* Oval.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Oval.pdf; sourceTree = "<group>"; };
+		333FDD852A34EDA6000FE172 /* HelperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		333FDD952A34EDA7000FE172 /* HelperAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelperAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		333FDD9F2A34EDA7000FE172 /* HelperAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelperAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1DCF1F4829D2FABA005D14C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333FDD822A34EDA6000FE172 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333FDD922A34EDA7000FE172 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333FDD9C2A34EDA7000FE172 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				1DCF1F4B29D2FABA005D14C3 /* BrightXDR.app */,
+				333FDD852A34EDA6000FE172 /* HelperApp.app */,
+				333FDD952A34EDA7000FE172 /* HelperAppTests.xctest */,
+				333FDD9F2A34EDA7000FE172 /* HelperAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +105,7 @@
 				1DCF1F5F29D2FBD9005D14C3 /* MetalView.swift */,
 				1DCF1F5229D2FABB005D14C3 /* Assets.xcassets */,
 				1DCF1F5729D2FABB005D14C3 /* BrightXDR.entitlements */,
+				333FDD7F2A34EB54000FE172 /* Oval.pdf */,
 			);
 			path = BrightXDR;
 			sourceTree = "<group>";
@@ -83,6 +130,59 @@
 			productReference = 1DCF1F4B29D2FABA005D14C3 /* BrightXDR.app */;
 			productType = "com.apple.product-type.application";
 		};
+		333FDD842A34EDA6000FE172 /* HelperApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333FDDA72A34EDA7000FE172 /* Build configuration list for PBXNativeTarget "HelperApp" */;
+			buildPhases = (
+				333FDD812A34EDA6000FE172 /* Sources */,
+				333FDD822A34EDA6000FE172 /* Frameworks */,
+				333FDD832A34EDA6000FE172 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HelperApp;
+			productName = HelperApp;
+			productReference = 333FDD852A34EDA6000FE172 /* HelperApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		333FDD942A34EDA7000FE172 /* HelperAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333FDDAA2A34EDA7000FE172 /* Build configuration list for PBXNativeTarget "HelperAppTests" */;
+			buildPhases = (
+				333FDD912A34EDA7000FE172 /* Sources */,
+				333FDD922A34EDA7000FE172 /* Frameworks */,
+				333FDD932A34EDA7000FE172 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				333FDD972A34EDA7000FE172 /* PBXTargetDependency */,
+			);
+			name = HelperAppTests;
+			productName = HelperAppTests;
+			productReference = 333FDD952A34EDA7000FE172 /* HelperAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		333FDD9E2A34EDA7000FE172 /* HelperAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 333FDDAD2A34EDA7000FE172 /* Build configuration list for PBXNativeTarget "HelperAppUITests" */;
+			buildPhases = (
+				333FDD9B2A34EDA7000FE172 /* Sources */,
+				333FDD9C2A34EDA7000FE172 /* Frameworks */,
+				333FDD9D2A34EDA7000FE172 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				333FDDA12A34EDA7000FE172 /* PBXTargetDependency */,
+			);
+			name = HelperAppUITests;
+			productName = HelperAppUITests;
+			productReference = 333FDD9F2A34EDA7000FE172 /* HelperAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -90,11 +190,22 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					1DCF1F4A29D2FABA005D14C3 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					333FDD842A34EDA6000FE172 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					333FDD942A34EDA7000FE172 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 333FDD842A34EDA6000FE172;
+					};
+					333FDD9E2A34EDA7000FE172 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 333FDD842A34EDA6000FE172;
 					};
 				};
 			};
@@ -112,6 +223,9 @@
 			projectRoot = "";
 			targets = (
 				1DCF1F4A29D2FABA005D14C3 /* BrightXDR */,
+				333FDD842A34EDA6000FE172 /* HelperApp */,
+				333FDD942A34EDA7000FE172 /* HelperAppTests */,
+				333FDD9E2A34EDA7000FE172 /* HelperAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -121,7 +235,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				333FDD802A34EB54000FE172 /* Oval.pdf in Resources */,
 				1DCF1F5329D2FABB005D14C3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333FDD832A34EDA6000FE172 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333FDD932A34EDA7000FE172 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333FDD9D2A34EDA7000FE172 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +274,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		333FDD812A34EDA6000FE172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333FDD912A34EDA7000FE172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		333FDD9B2A34EDA7000FE172 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		333FDD972A34EDA7000FE172 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 333FDD842A34EDA6000FE172 /* HelperApp */;
+			targetProxy = 333FDD962A34EDA7000FE172 /* PBXContainerItemProxy */;
+		};
+		333FDDA12A34EDA7000FE172 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 333FDD842A34EDA6000FE172 /* HelperApp */;
+			targetProxy = 333FDDA02A34EDA7000FE172 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DCF1F5829D2FABB005D14C3 /* Debug */ = {
@@ -260,16 +430,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BrightXDR/BrightXDR.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = JV88U38946;
+				DEVELOPMENT_TEAM = STSYBH724K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BrightXDR/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Bright XDR";
+				INFOPLIST_KEY_CFBundleDisplayName = "XDR Brightness";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -279,7 +450,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.starkdmi.BrightXDR;
+				PRODUCT_BUNDLE_IDENTIFIER = de.codext.mac.xdrbrightness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -292,16 +463,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = BrightXDR/BrightXDR.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = JV88U38946;
+				DEVELOPMENT_TEAM = STSYBH724K;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BrightXDR/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Bright XDR";
+				INFOPLIST_KEY_CFBundleDisplayName = "XDR Brightness";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
@@ -311,10 +483,136 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.starkdmi.BrightXDR;
+				PRODUCT_BUNDLE_IDENTIFIER = de.codext.mac.xdrbrightness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		333FDDA82A34EDA7000FE172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HelperApp/HelperApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HelperApp/Preview Content\"";
+				DEVELOPMENT_TEAM = STSYBH724K;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.codext.mac.xdrbrightness.HelperApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		333FDDA92A34EDA7000FE172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HelperApp/HelperApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HelperApp/Preview Content\"";
+				DEVELOPMENT_TEAM = STSYBH724K;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.codext.mac.xdrbrightness.HelperApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		333FDDAB2A34EDA7000FE172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = STSYBH724K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.codext.mac.xdrbrightness.HelperAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelperApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HelperApp";
+			};
+			name = Debug;
+		};
+		333FDDAC2A34EDA7000FE172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = STSYBH724K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.codext.mac.xdrbrightness.HelperAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HelperApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HelperApp";
+			};
+			name = Release;
+		};
+		333FDDAE2A34EDA7000FE172 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = STSYBH724K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.codext.mac.xdrbrightness.HelperAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = HelperApp;
+			};
+			name = Debug;
+		};
+		333FDDAF2A34EDA7000FE172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = STSYBH724K;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.codext.mac.xdrbrightness.HelperAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = HelperApp;
 			};
 			name = Release;
 		};
@@ -335,6 +633,33 @@
 			buildConfigurations = (
 				1DCF1F5B29D2FABB005D14C3 /* Debug */,
 				1DCF1F5C29D2FABB005D14C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		333FDDA72A34EDA7000FE172 /* Build configuration list for PBXNativeTarget "HelperApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333FDDA82A34EDA7000FE172 /* Debug */,
+				333FDDA92A34EDA7000FE172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		333FDDAA2A34EDA7000FE172 /* Build configuration list for PBXNativeTarget "HelperAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333FDDAB2A34EDA7000FE172 /* Debug */,
+				333FDDAC2A34EDA7000FE172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		333FDDAD2A34EDA7000FE172 /* Build configuration list for PBXNativeTarget "HelperAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				333FDDAE2A34EDA7000FE172 /* Debug */,
+				333FDDAF2A34EDA7000FE172 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

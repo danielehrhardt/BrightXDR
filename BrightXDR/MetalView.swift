@@ -74,7 +74,7 @@ class MetalView: MTKView, MTKViewDelegate {
         
         // Preview data
         let textLayer = CATextLayer()
-        textLayer.string = "Bright XDR"
+        textLayer.string = "XDR Brightness"
         textLayer.font = NSFont.boldSystemFont(ofSize: 16) // fontSize ignored
         textLayer.fontSize = 136
         textLayer.foregroundColor = cgColor

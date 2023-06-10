@@ -6,6 +6,7 @@
 //
 
 import Cocoa
+import ServiceManagement
 
 class AppDelegate: NSObject, NSApplicationDelegate {
     // The overlay window
@@ -14,7 +15,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     // The MTKView instance
     private var metalView: MetalView!
     
+    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
+
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
+
+        if let button = statusItem.button {
+            button.image = NSImage(named: NSImage.Name("Oval.pdf")) // Set your image
+        }
+        constructMenu()
+        
         guard let mainScreen = NSScreen.main else { return }
         
         // let splitViewRect = NSRect(x: mainScreen.frame.width/2, y: 0, width: mainScreen.frame.width/2, height: mainScreen.frame.height)
@@ -30,13 +40,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Set the window's level to mainMenu to make it float above all other windows
         // Requires "Application is agent (UIElement)" set to "YES" in info.plist for system-wide support
         // The maximum possible values is NSWindow.Level(rawValue: Int(CGShieldingWindowLevel() + 19))
-        window.level = NSWindow.Level.mainMenu
+        window.level = NSWindow.Level(rawValue: Int(CGShieldingWindowLevel() + 19))
         
         // Allow window to overlay in Mission Control and Spaces
         window.collectionBehavior = [.stationary, .canJoinAllSpaces, .fullScreenAuxiliary, .ignoresCycle, .managed]
         
         // Keep visible all time (required for overlays)
         window.hidesOnDeactivate = false
+        window.allowsConcurrentViewDrawing = true
 
         // Add metal view with HDR overlay
         guard let view = window.contentView else { return }
@@ -47,4 +58,16 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Present the window
         window.makeKeyAndOrderFront(nil)
     }
+    
+       func constructMenu() {
+           let menu = NSMenu(title: "XDR Brightness")
+           menu.addItem(NSMenuItem(title: "XDR Brightness", action: nil, keyEquivalent: "x"))
+           menu.addItem(NSMenuItem(title: "Close", action: #selector(closeApp), keyEquivalent: "q"))
+          statusItem.menu = menu
+       }
+       
+       @objc func closeApp() {
+           NSApplication.shared.terminate(self)
+       }
+    
 }
